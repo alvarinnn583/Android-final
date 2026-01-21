@@ -1,0 +1,7 @@
+{
+    "name": "Android VM",
+    "build": { "dockerfile": "Dockerfile" },
+    "runArgs": ["--device=/dev/kvm"],
+    "forwardPorts": [6080, 5900],
+    "postCreateCommand": "bash .devcontainer/setup-android.sh"
+}
